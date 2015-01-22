@@ -1,0 +1,28 @@
+<p class="lead">Various Things</p>
+
+<div>
+<h3> Dogs </h3>
+<% @dogs.each do |dog| %><br>
+  <%= dog.name %>
+  <%= dog.breed %>
+  <%= dog.age %>
+<% end %>
+</div>
+
+<div>
+<h3> Organizations </h3>
+<% @organizations.each do |place| %><br>
+  <%= place.name %>
+  <%= place.number_of_employees %>
+
+<% end %>
+</div>
+
+<div>
+<h3> People </h3>
+<% @people.each do |person| %><br>
+  <%= person.first_name %>
+  <%= person.last_name %>
+  <%= person.date_of_birth %>
+<% end %>
+</div>

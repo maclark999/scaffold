@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
+  resources :dogs
+
   resources :organizations
 
   resources :people
 
-  root "home#dashboard"
+  root "home#index"
 end
